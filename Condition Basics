@@ -1,0 +1,19 @@
+import java.util.*;
+public class conditionBasics2 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int n = scn.nextInt();
+        int count=0;
+        while(n>0){
+            n=n/10;
+            count++;
+        }
+        if(count>=1 && count<4){
+            System.out.println("Your number is "+count+" digit number");
+        }
+        else{
+            System.out.println("The number is so big");
+        }
+    }
+}
